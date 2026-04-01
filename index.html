@@ -8,141 +8,143 @@
     <!--<meta http-equiv="refresh" content="5" /> -->
     <title>Students Detail Form</title>
     <link rel="shortcut icon" href="/Favicon/assets/icon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/sctipt.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/sctipt.js"></script>
   </head>
 
   <body>
-    <h1>Students Detail Form</h1>
-    <a href="find_student.php">➡️ Search Student Details</a><br><br>
-    <form action="action_page.php" method="POST">
-      Student's Name :
-      <input
-        type="text"
-        name="name"
-        size="60"
-        placeholder="Enter your Full Name"
-        required
-      />
-      <br />
-      Roll No :
-      <input type="number" name="rollno" size="20" placeholder="Enter your Roll No." /> <br />
-      Address : <input type="text" name="address" size="150" /> <br />
-      DOB : <input type="date" name="dob"> <br />
-      Email : <input type="email" name="email" size="40" placeholder="Enter your email id" />
-      <br />
+    <div class="container">
+      <h1>Students Detail Form</h1>
+      <a href="find_student.php">➡️ Search Student Details</a><br><br>
+      <form action="action_page.php" method="POST">
+        Student's Name :
+        <input
+          type="text"
+          name="name"
+          size="60"
+          placeholder="Enter your Full Name"
+          required
+        />
+        <br />
+        Roll No :
+        <input type="number" name="rollno" size="20" placeholder="Enter your Roll No." /> <br />
+        Address : <input type="text" name="address" size="150" /> <br />
+        DOB : <input type="date" name="dob"> <br />
+        Email : <input type="email" name="email" size="40" placeholder="Enter your email id" />
+        <br />
 
-      City <br />
-      <input type="radio" name="city" value="Kolkata" checked /> Kolkata <br />
-      <input type="radio" name="city" value="Delhi" /> Delhi <br />
-      <input type="radio" name="city" value="Mumbai" /> Mumbai <br />
+        City <br />
+        <input type="radio" name="city" value="Kolkata" checked /> Kolkata <br />
+        <input type="radio" name="city" value="Delhi" /> Delhi <br />
+        <input type="radio" name="city" value="Mumbai" /> Mumbai <br />
 
-      Gender: Male <input type="radio" name="gender" value="Male" /> Female<input
-        type="radio"
-        name="gender"
-        value="Female"
-        checked
-      />
-      <br /><br />
-      Educationcal Qualification: <br /><br />
-      Name of the Institution : <input type="text" name="hs_institution" size="20" /> <br />
+        Gender: Male <input type="radio" name="gender" value="Male" /> Female<input
+          type="radio"
+          name="gender"
+          value="Female"
+          checked
+        />
+        <br /><br />
+        Educationcal Qualification: <br /><br />
+        Name of the Institution : <input type="text" name="hs_institution" size="20" /> <br />
 
-      H.S Year of Passing :
-      <select name="hs_pass_year">
-        <option>2009</option>
-        <option>2010</option>
-        <option>2011</option>
-        <option>2012</option>
-        <option>2013</option>
-        <option>2014</option>
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-        <option>2018</option>
-        <option>2019</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
-        <option>2023</option>
-        <option>2024</option>
-        <option>2025</option></select
-      ><br /><br />
-      <input type="checkbox" name="edu_ba" value="yes" />
-      B.A: Name of the Institution : <input type="text" name="ba_institution" size="20" /> <br />
-      <select name="ba_pass_year">
-        <option>2009</option>
-        <option>2010</option>
-        <option>2011</option>
-        <option>2012</option>
-        <option>2013</option>
-        <option>2014</option>
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-        <option>2018</option>
-        <option>2019</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
-        <option>2023</option>
-        <option>2024</option>
-        <option>2025</option></select
-      ><br /><br />
-      <input type="checkbox" name="edu_bsc" value="yes" />
-      B.Sc: Name of the Institution : <input type="text" name="bsc_institution" size="20" /> <br />
-      <select name="bsc_pass_year">
-        <option>2009</option>
-        <option>2010</option>
-        <option>2011</option>
-        <option>2012</option>
-        <option>2013</option>
-        <option>2014</option>
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-        <option>2018</option>
-        <option>2019</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
-        <option>2023</option>
-        <option>2024</option>
-        <option>2025</option>
-      </select>
-      <br /><br />
+        H.S Year of Passing :
+        <select name="hs_pass_year">
+          <option>2009</option>
+          <option>2010</option>
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option></select
+        ><br /><br />
+        <input type="checkbox" name="edu_ba" value="yes" />
+        B.A: Name of the Institution : <input type="text" name="ba_institution" size="20" /> <br />
+        <select name="ba_pass_year">
+          <option>2009</option>
+          <option>2010</option>
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option></select
+        ><br /><br />
+        <input type="checkbox" name="edu_bsc" value="yes" />
+        B.Sc: Name of the Institution : <input type="text" name="bsc_institution" size="20" /> <br />
+        <select name="bsc_pass_year">
+          <option>2009</option>
+          <option>2010</option>
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+        </select>
+        <br /><br />
 
-      <input type="checkbox" name="edu_bcom" value="yes" />
-      B.Com: Name of the Institution : <input type="text" name="bcom_institution" size="20" /> <br />
-      <select name="bcom_pass_year">
-        <option>2009</option>
-        <option>2010</option>
-        <option>2011</option>
-        <option>2012</option>
-        <option>2013</option>
-        <option>2014</option>
-        <option>2015</option>
-        <option>2016</option>
-        <option>2017</option>
-        <option>2018</option>
-        <option>2019</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
-        <option>2023</option>
-        <option>2024</option>
-        <option>2025</option>
-      </select>
-      <br />
+        <input type="checkbox" name="edu_bcom" value="yes" />
+        B.Com: Name of the Institution : <input type="text" name="bcom_institution" size="20" /> <br />
+        <select name="bcom_pass_year">
+          <option>2009</option>
+          <option>2010</option>
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+        </select>
+        <br />
 
-      <label for="feedback">Enter your feedback:</label><br />
-      <textarea id="feedback" name="feedback" rows="4" cols="50">
-Default text can go here.
-</textarea
-      ><br />
+        <label for="feedback">Enter your feedback:</label><br />
+        <textarea id="feedback" name="feedback" rows="4" cols="50">
+  Default text can go here.
+  </textarea
+        ><br />
 
-      <input type="submit" value="OK" />
-      <input type="reset" value="Clear Form" />
-      <button id="button" onclick="clearAndAlart()">Clear</button>
-    </form>
+        <input type="submit" value="OK" />
+        <input type="reset" value="Clear Form" />
+        <button id="button" onclick="clearAndAlart()">Clear</button>
+      </form>
+    </div>
   </body>
 </html>
